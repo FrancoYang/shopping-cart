@@ -9,7 +9,7 @@
     <table id="cartTable">
         <thead>
             <tr>
-                <th><label for=""><input type="checkbox">全选</label></th>
+                <th><label for=""><input type="checkbox" class="check-all check">全选</label></th>
                 <th>商品</th>
                 <th>单价</th>
                 <th>数量</th>
@@ -19,25 +19,68 @@
         </thead>
         <tbody>
             <tr>
-                <td><input type="checkbox"></td>
-                <td><img src="" alt=""><span></span></td>
-                <td>100.00</td>
-                <td>
-                    <span></span>
-                    <input type="text" value="1">
-                    <span>+</span>
+                <td class="checkbox"><input type="checkbox" class="check-one check"></td>
+                <td class="goods"><img src="./img/1.jpg" alt=""><span>Vue.js权威指南</span></td>
+                <td class="price">78.20</td>
+                <td class="count">
+                    <span class="reduce"></span>
+                    <input type="text" value="1" class="count-input">
+                    <span class="add">+</span>
                 </td>
-                <td>100.00</td>
-                <td><span>删除</span></td>
+                <td class="subtotal">78.20</td>
+                <td class="operation"><span class="delete">删除</span></td>
             </tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
+            <tr>
+                <td class="checkbox"><input type="checkbox" class="check-one check"></td>
+                <td class="goods"><img src="./img/2.jpg" alt=""><span>Vue.js实战</span></td>
+                <td class="price">62.40</td>
+                <td class="count">
+                    <span class="reduce"></span>
+                    <input type="text" value="1" class="count-input">
+                    <span class="add">+</span>
+                </td>
+                <td class="subtotal">62.40</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>
+            <tr>
+                <td class="checkbox"><input type="checkbox" class="check-one check"></td>
+                <td class="goods"><img src="./img/3.jpg" alt=""><span>JavaScript高级程序设计（第3版）</span></td>
+                <td class="price">83.20</td>
+                <td class="count">
+                    <span class="reduce"></span>
+                    <input type="text" value="1" class="count-input">
+                    <span class="add">+</span>
+                </td>
+                <td class="subtotal">83.20</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>
+            <tr>
+                <td class="checkbox"><input type="checkbox" class="check-one check"></td>
+                <td class="goods"><img src="./img/4.jpg" alt=""><span>高效前端：Web高效编程与优化实践</span></td>
+                <td class="price">70.30</td>
+                <td class="count">
+                    <span class="reduce"></span>
+                    <input type="text" value="1" class="count-input">
+                    <span class="add">+</span>
+                </td>
+                <td class="subtotal">70.30</td>
+                <td class="operation"><span class="delete">删除</span></td>
+            </tr>
+
         </tbody>
     </table>
-    <!--底部部分-->
-    <footer>
-
+    <!--底下结算部分-->
+    <footer class="foot">
+        <label for="" class="f1 select-all"><input type="checkbox" class="check-all check">全选</label>
+        <a href="javascript:;" class="f1 delete">删除</a>
+        <div class="fr closing">结算</div>
+        <div class="fr total">合计：<span>0.00</span></div>
+        <div class="fr selected">
+            已选商品
+            <span>0</span>件
+            <span class="arrow up">︽</span>
+            <span class="arrow down">︾</span>
+        </div>
     </footer>
 </body>
 </html>
